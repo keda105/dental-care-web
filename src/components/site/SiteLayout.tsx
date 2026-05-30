@@ -3,6 +3,7 @@ import { SiteHeader } from "./SiteHeader";
 import { SiteFooter } from "./SiteFooter";
 import { FloatingActions } from "./FloatingActions";
 import { CookieConsent } from "./CookieConsent";
+import { Toaster } from "@/components/ui/sonner";
 
 export function SiteLayout({ children }: { children: ReactNode }) {
   return (
@@ -12,6 +13,7 @@ export function SiteLayout({ children }: { children: ReactNode }) {
       <SiteFooter />
       <FloatingActions />
       <CookieConsent />
+      <Toaster position="top-center" />
     </div>
   );
 }
