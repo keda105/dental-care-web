@@ -4,14 +4,14 @@ export function FloatingActions() {
   return (
     <div className="fixed bottom-6 right-6 z-40 flex flex-col gap-3">
       <a
-        href="tel:+35542220000"
+        href="tel:+0000000"
         aria-label="Call clinic"
         className="group inline-flex h-12 w-12 items-center justify-center rounded-full bg-primary text-primary-foreground shadow-elegant transition-transform hover:scale-110"
       >
         <Phone className="h-5 w-5" />
       </a>
       <a
-        href="https://wa.me/35542220000"
+        href="https://wa.me/0000000"
         target="_blank"
         rel="noreferrer"
         aria-label="WhatsApp chat"

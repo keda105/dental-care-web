@@ -32,9 +32,9 @@ export function SiteFooter() {
           <div>
             <h4 className="font-display text-base font-semibold">Visit</h4>
             <ul className="mt-4 space-y-3 text-sm text-muted-foreground">
-              <li className="flex gap-3"><MapPin className="h-4 w-4 mt-0.5 text-teal" /> Rruga e Kavajës 27, Tirana, Albania</li>
-              <li className="flex gap-3"><Phone className="h-4 w-4 mt-0.5 text-teal" /> +355 4 222 0000</li>
-              <li className="flex gap-3"><Mail className="h-4 w-4 mt-0.5 text-teal" /> hello@lumieredental.com</li>
+              <li className="flex gap-3"><MapPin className="h-4 w-4 mt-0.5 text-teal" /> Rruga ...., City, County</li>
+              <li className="flex gap-3"><Phone className="h-4 w-4 mt-0.5 text-teal" /> + 00 00000</li>
+              <li className="flex gap-3"><Mail className="h-4 w-4 mt-0.5 text-teal" /> email@dentalcare</li>
             </ul>
           </div>
 

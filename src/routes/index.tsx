@@ -213,8 +213,8 @@ function Home() {
               <h3 className="mt-3 font-display text-3xl font-semibold md:text-4xl">Dental emergency? We're on call.</h3>
               <p className="mt-3 text-primary-foreground/80">Toothache, broken tooth or trauma — call us anytime, day or night.</p>
             </div>
-            <a href="tel:+35542220000" className="inline-flex items-center gap-2 rounded-2xl bg-white px-6 py-4 font-semibold text-primary shadow-elegant transition-transform hover:scale-105">
-              <Phone className="h-5 w-5" /> +355 4 222 0000
+            <a href="tel:+0000000" className="inline-flex items-center gap-2 rounded-2xl bg-white px-6 py-4 font-semibold text-primary shadow-elegant transition-transform hover:scale-105">
+              <Phone className="h-5 w-5" /> + 00 00000
             </a>
           </div>
         </div>

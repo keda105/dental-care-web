@@ -58,7 +58,7 @@ function Dentists() {
                 <div className="absolute inset-x-4 bottom-4 flex gap-2">
                   <a href="#" aria-label="Instagram" className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-background/90 backdrop-blur text-foreground hover:bg-primary hover:text-primary-foreground transition-colors"><Instagram className="h-4 w-4" /></a>
                   <a href="#" aria-label="LinkedIn" className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-background/90 backdrop-blur text-foreground hover:bg-primary hover:text-primary-foreground transition-colors"><Linkedin className="h-4 w-4" /></a>
-                  <a href="mailto:hello@lumieredental.com" aria-label="Email" className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-background/90 backdrop-blur text-foreground hover:bg-primary hover:text-primary-foreground transition-colors"><Mail className="h-4 w-4" /></a>
+                  <a href="mailto:email@dentalcare" aria-label="Email" className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-background/90 backdrop-blur text-foreground hover:bg-primary hover:text-primary-foreground transition-colors"><Mail className="h-4 w-4" /></a>
                 </div>
               </div>
               <div className="p-6 flex-1 flex flex-col">
