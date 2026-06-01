@@ -45,6 +45,7 @@ const reviews = [
   { name: "Elena M.", role: "Cosmetic patient", text: "The most beautiful clinic I've ever stepped into. My smile is completely transformed.", stars: 5 },
   { name: "Marco R.", role: "Implants patient", text: "Painless implant procedure. The team treats you like family.", stars: 5 },
   { name: "Sophia K.", role: "Family patient", text: "Our kids love coming here. The pediatric room is magical.", stars: 5 },
+  { name: "Daniel H.", role: "Whitening patient", text: "8 shades whiter in a single visit — and absolutely no sensitivity. Highly recommended.", stars: 5 },
 ];
 
 function Home() {
