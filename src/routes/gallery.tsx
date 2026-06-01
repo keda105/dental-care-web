@@ -61,7 +61,7 @@ function Gallery() {
           {filtered.map((c, i) => (
             <figure key={i} className="group overflow-hidden rounded-3xl border border-border/60 bg-card animate-fade-up">
               <div className="relative aspect-[4/3] overflow-hidden">
-                <img src={smile} alt={c.title} loading="lazy" className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" />
+                <img src={(c as any).image ?? smile} alt={c.title} loading="lazy" className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" />
                 <span className="absolute left-4 top-4 rounded-full bg-background/90 px-3 py-1 text-xs font-medium backdrop-blur">{c.cat}</span>
               </div>
               <figcaption className="p-5">
