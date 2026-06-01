@@ -5,6 +5,10 @@ import { SiteLayout } from "@/components/site/SiteLayout";
 import { Section } from "@/components/site/Section";
 import smile from "@/assets/smile-closeup.jpg";
 import veneersCase1 from "@/assets/veneers-case-1.jpg.asset.json";
+import implantCase from "@/assets/implant-case.jpg.asset.json";
+import whiteningCase from "@/assets/whitening-case.jpg.asset.json";
+import makeoverCase from "@/assets/makeover-case.jpg.asset.json";
+import orthoCase from "@/assets/ortho-case.jpg.asset.json";
 
 export const Route = createFileRoute("/gallery")({
   head: () => ({
@@ -24,10 +28,10 @@ const cats: Category[] = ["All", "Veneers", "Implants", "Whitening", "Orthodonti
 
 const cases = [
   { cat: "Veneers" as Category, title: "10 Porcelain Veneers", desc: "Full smile redesign for a professional in her 30s.", image: veneersCase1.url },
-  { cat: "Implants" as Category, title: "Single Front Tooth Implant", desc: "Restored confidence after sports injury." },
-  { cat: "Whitening" as Category, title: "8 Shades Whiter", desc: "In-office whitening, single 60-minute session." },
-  { cat: "Orthodontics" as Category, title: "Invisalign — 14 months", desc: "Adult crowding corrected with clear aligners." },
-  { cat: "Full Makeover" as Category, title: "Full Mouth Reconstruction", desc: "Combination of implants and veneers." },
+  { cat: "Implants" as Category, title: "Single Front Tooth Implant", desc: "Restored confidence after sports injury.", image: implantCase.url },
+  { cat: "Whitening" as Category, title: "8 Shades Whiter", desc: "In-office whitening, single 60-minute session.", image: whiteningCase.url },
+  { cat: "Orthodontics" as Category, title: "Invisalign — 14 months", desc: "Adult crowding corrected with clear aligners.", image: orthoCase.url },
+  { cat: "Full Makeover" as Category, title: "Full Mouth Reconstruction", desc: "Combination of implants and veneers.", image: makeoverCase.url },
   { cat: "Veneers" as Category, title: "Hollywood Smile", desc: "20 ultra-thin porcelain veneers." },
   { cat: "Implants" as Category, title: "All-on-4 Full Arch", desc: "Fixed teeth in a single day." },
   { cat: "Whitening" as Category, title: "Pre-wedding Whitening", desc: "Take-home + in-office combo." },
