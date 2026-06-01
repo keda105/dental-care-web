@@ -4,6 +4,7 @@ import { SiteLayout } from "@/components/site/SiteLayout";
 import { Section } from "@/components/site/Section";
 import { TrustBar } from "@/components/site/TrustBar";
 import { BeforeAfter } from "@/components/site/BeforeAfter";
+import { AppointmentForm } from "@/components/site/AppointmentForm";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import hero from "@/assets/hero-smile.jpg";
