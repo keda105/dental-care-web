@@ -23,7 +23,7 @@ type Category = "All" | "Veneers" | "Implants" | "Whitening" | "Orthodontics" | 
 const cats: Category[] = ["All", "Veneers", "Implants", "Whitening", "Orthodontics", "Full Makeover"];
 
 const cases = [
-  { cat: "Veneers" as Category, title: "10 Porcelain Veneers", desc: "Full smile redesign for a professional in her 30s." },
+  { cat: "Veneers" as Category, title: "10 Porcelain Veneers", desc: "Full smile redesign for a professional in her 30s.", image: veneersCase1.url },
   { cat: "Implants" as Category, title: "Single Front Tooth Implant", desc: "Restored confidence after sports injury." },
   { cat: "Whitening" as Category, title: "8 Shades Whiter", desc: "In-office whitening, single 60-minute session." },
   { cat: "Orthodontics" as Category, title: "Invisalign — 14 months", desc: "Adult crowding corrected with clear aligners." },
