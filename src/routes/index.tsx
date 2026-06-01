@@ -51,65 +51,46 @@ const reviews = [
 function Home() {
   return (
     <SiteLayout>
-      {/* HERO */}
       <section className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-soft" />
-        <div className="absolute -top-32 -right-32 h-[480px] w-[480px] rounded-full bg-teal/20 blur-3xl" />
-        <div className="absolute -bottom-40 -left-40 h-[520px] w-[520px] rounded-full bg-primary/15 blur-3xl" />
-        <div className="container-px relative mx-auto grid max-w-7xl items-center gap-12 py-20 lg:grid-cols-2 lg:py-32">
-          <div className="animate-fade-up">
-            <span className="inline-flex items-center gap-2 rounded-full border border-teal/30 bg-teal/10 px-4 py-1.5 text-xs font-medium uppercase tracking-widest text-teal">
+        <div className="absolute inset-0">
+          <img src={hero} alt="" aria-hidden className="h-full w-full object-cover" />
+          <div className="absolute inset-0 bg-gradient-to-br from-black/80 via-primary/70 to-black/60" />
+          <div className="absolute -top-32 -right-32 h-[480px] w-[480px] rounded-full bg-teal/30 blur-3xl" />
+        </div>
+        <div className="container-px relative mx-auto max-w-7xl py-24 md:py-36 lg:py-44">
+          <div className="max-w-3xl animate-fade-up text-primary-foreground">
+            <span className="inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/10 px-4 py-1.5 text-xs font-medium uppercase tracking-widest backdrop-blur">
               <span className="h-1.5 w-1.5 rounded-full bg-teal animate-pulse" /> Now welcoming new patients
             </span>
-            <h1 className="mt-6 font-display text-5xl font-semibold leading-[1.05] tracking-tight text-foreground md:text-7xl">
-              Your Perfect <span className="text-gradient">Smile</span> Starts Here
+            <h1 className="mt-6 font-display text-5xl font-semibold leading-[1.05] tracking-tight md:text-7xl">
+              Professional Dental Care <span className="text-gradient">You Can Trust</span>
             </h1>
-            <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground">
-              A modern dental sanctuary in the heart of the city — combining precision technology,
-              artistry and compassionate care to craft smiles that last a lifetime.
+            <p className="mt-6 max-w-xl text-lg leading-relaxed text-white/85">
+              A modern dental sanctuary combining precision technology, artistry and
+              compassionate care — crafting confident smiles that last a lifetime.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
-              <Button asChild size="lg" className="bg-gradient-hero text-primary-foreground shadow-elegant hover:shadow-glow transition-all">
-                <Link to="/contact"><CalendarCheck className="mr-2 h-4 w-4" />Book Appointment</Link>
+              <Button asChild size="lg" className="bg-white text-primary hover:bg-white/90 shadow-elegant transition-all">
+                <a href="#book"><CalendarCheck className="mr-2 h-4 w-4" />Book Appointment</a>
               </Button>
-              <Button asChild size="lg" variant="outline" className="border-primary/30">
+              <Button asChild size="lg" variant="outline" className="border-white/40 bg-white/5 text-white hover:bg-white/15 hover:text-white">
                 <Link to="/contact"><MessageSquare className="mr-2 h-4 w-4" />Free Consultation</Link>
               </Button>
             </div>
-            <div className="mt-10 flex items-center gap-6 text-sm text-muted-foreground">
+            <div className="mt-10 flex items-center gap-6 text-sm text-white/80">
               <div className="flex -space-x-2">
                 {[dentist1, dentist2, dentist3].map((d, i) => (
-                  <img key={i} src={d} alt="" className="h-9 w-9 rounded-full border-2 border-background object-cover" />
+                  <img key={i} src={d} alt="" className="h-9 w-9 rounded-full border-2 border-white/80 object-cover" />
                 ))}
               </div>
               <div>
                 <div className="flex items-center gap-1 text-gold">
                   {[...Array(5)].map((_, i) => <Star key={i} className="h-3.5 w-3.5 fill-current" />)}
-                  <span className="ml-1 font-semibold text-foreground">4.9</span>
+                  <span className="ml-1 font-semibold text-white">4.9</span>
                 </div>
                 <p className="text-xs">From 1,200+ verified reviews</p>
               </div>
             </div>
-          </div>
-
-          <div className="relative animate-fade-in">
-            <div className="absolute -inset-4 rounded-[2.5rem] bg-gradient-hero opacity-20 blur-2xl" />
-            <img
-              src={hero}
-              alt="Lumière dental clinic interior"
-              width={1536}
-              height={1280}
-              className="relative w-full rounded-[2rem] object-cover shadow-elegant"
-            />
-            <Card className="absolute -bottom-6 -left-6 hidden md:flex items-center gap-3 bg-card/95 backdrop-blur-xl p-4 shadow-elegant border-0 rounded-2xl">
-              <span className="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-teal/15 text-teal">
-                <ShieldCheck className="h-5 w-5" />
-              </span>
-              <div className="text-sm">
-                <div className="font-semibold text-foreground">EU certified</div>
-                <div className="text-muted-foreground">Sterilization & safety</div>
-              </div>
-            </Card>
           </div>
         </div>
       </section>
