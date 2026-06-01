@@ -32,10 +32,6 @@ const cases = [
   { cat: "Whitening" as Category, title: "8 Shades Whiter", desc: "In-office whitening, single 60-minute session.", image: whiteningCase.url },
   { cat: "Orthodontics" as Category, title: "Invisalign — 14 months", desc: "Adult crowding corrected with clear aligners.", image: orthoCase.url },
   { cat: "Full Makeover" as Category, title: "Full Mouth Reconstruction", desc: "Combination of implants and veneers.", image: makeoverCase.url },
-  { cat: "Veneers" as Category, title: "Hollywood Smile", desc: "20 ultra-thin porcelain veneers." },
-  { cat: "Implants" as Category, title: "All-on-4 Full Arch", desc: "Fixed teeth in a single day." },
-  { cat: "Whitening" as Category, title: "Pre-wedding Whitening", desc: "Take-home + in-office combo." },
-  { cat: "Orthodontics" as Category, title: "Teen Ortho", desc: "Modern ceramic braces." },
 ];
 
 function Gallery() {
