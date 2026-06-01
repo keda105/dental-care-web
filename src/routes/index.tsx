@@ -265,7 +265,7 @@ function Home() {
           <p className="mx-auto mt-4 max-w-xl text-muted-foreground">Book a complimentary consultation. We'll design a plan tailored to your goals and budget.</p>
           <div className="mt-8 flex flex-wrap justify-center gap-3">
             <Button asChild size="lg" className="bg-gradient-hero text-primary-foreground">
-              <Link to="/contact">Book Appointment</Link>
+              <a href="#book">Book Appointment</a>
             </Button>
             <Button asChild size="lg" variant="outline" className="border-primary/30">
               <Link to="/services">Explore Services</Link>
