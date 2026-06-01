@@ -4,6 +4,7 @@ import { cn } from "@/lib/utils";
 import { SiteLayout } from "@/components/site/SiteLayout";
 import { Section } from "@/components/site/Section";
 import smile from "@/assets/smile-closeup.jpg";
+import veneersCase1 from "@/assets/veneers-case-1.jpg.asset.json";
 
 export const Route = createFileRoute("/gallery")({
   head: () => ({
