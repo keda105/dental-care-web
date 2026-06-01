@@ -3,6 +3,8 @@ import { useMemo, useState } from "react";
 import { cn } from "@/lib/utils";
 import { SiteLayout } from "@/components/site/SiteLayout";
 import { Section } from "@/components/site/Section";
+import { Lightbox } from "@/components/site/Lightbox";
+import { ZoomIn } from "lucide-react";
 import smile from "@/assets/smile-closeup.jpg";
 import veneersCase1 from "@/assets/veneers-case-1.jpg.asset.json";
 import implantCase from "@/assets/implant-case.jpg.asset.json";
