@@ -4,6 +4,7 @@ import { cn } from "@/lib/utils";
 import { SiteLayout } from "@/components/site/SiteLayout";
 import { Section } from "@/components/site/Section";
 import smile from "@/assets/smile-closeup.jpg";
+import veneersCase1 from "@/assets/veneers-case-1.jpg.asset.json";
 
 export const Route = createFileRoute("/gallery")({
   head: () => ({
@@ -22,7 +23,7 @@ type Category = "All" | "Veneers" | "Implants" | "Whitening" | "Orthodontics" | 
 const cats: Category[] = ["All", "Veneers", "Implants", "Whitening", "Orthodontics", "Full Makeover"];
 
 const cases = [
-  { cat: "Veneers" as Category, title: "10 Porcelain Veneers", desc: "Full smile redesign for a professional in her 30s." },
+  { cat: "Veneers" as Category, title: "10 Porcelain Veneers", desc: "Full smile redesign for a professional in her 30s.", image: veneersCase1.url },
   { cat: "Implants" as Category, title: "Single Front Tooth Implant", desc: "Restored confidence after sports injury." },
   { cat: "Whitening" as Category, title: "8 Shades Whiter", desc: "In-office whitening, single 60-minute session." },
   { cat: "Orthodontics" as Category, title: "Invisalign — 14 months", desc: "Adult crowding corrected with clear aligners." },
@@ -60,7 +61,7 @@ function Gallery() {
           {filtered.map((c, i) => (
             <figure key={i} className="group overflow-hidden rounded-3xl border border-border/60 bg-card animate-fade-up">
               <div className="relative aspect-[4/3] overflow-hidden">
-                <img src={smile} alt={c.title} loading="lazy" className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" />
+                <img src={(c as any).image ?? smile} alt={c.title} loading="lazy" className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" />
                 <span className="absolute left-4 top-4 rounded-full bg-background/90 px-3 py-1 text-xs font-medium backdrop-blur">{c.cat}</span>
               </div>
               <figcaption className="p-5">
