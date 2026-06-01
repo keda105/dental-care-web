@@ -205,15 +205,17 @@ function Home() {
 
       {/* REVIEWS */}
       <Section eyebrow="Patient stories" title="Loved by 12,000+ smiling patients">
-        <div className="grid gap-6 md:grid-cols-3">
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {reviews.map((r) => (
-            <Card key={r.name} className="bg-gradient-card p-6 border-border/60">
+            <Card key={r.name} className="bg-gradient-card p-6 border-border/60 transition-all hover:-translate-y-1 hover:shadow-elegant">
               <div className="flex gap-1 text-gold">
                 {[...Array(r.stars)].map((_, i) => <Star key={i} className="h-4 w-4 fill-current" />)}
               </div>
               <p className="mt-4 text-sm leading-relaxed text-foreground">"{r.text}"</p>
               <div className="mt-6 flex items-center gap-3">
-                <div className="h-10 w-10 rounded-full bg-gradient-hero" />
+                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-gradient-hero text-sm font-semibold text-primary-foreground">
+                  {r.name.charAt(0)}
+                </div>
                 <div>
                   <div className="text-sm font-semibold">{r.name}</div>
                   <div className="text-xs text-muted-foreground">{r.role}</div>
@@ -223,6 +225,38 @@ function Home() {
           ))}
         </div>
       </Section>
+
+      {/* BOOK APPOINTMENT */}
+      <section id="book" className="bg-gradient-soft scroll-mt-24">
+        <Section
+          eyebrow="Book online"
+          title="Reserve your appointment"
+          description="Tell us a little about you and pick a date — we'll confirm within the hour."
+        >
+          <div className="mx-auto grid max-w-6xl gap-10 lg:grid-cols-[1fr_1.1fr]">
+            <div className="space-y-6">
+              <div className="rounded-3xl bg-gradient-hero p-8 text-primary-foreground shadow-elegant md:p-10">
+                <h3 className="font-display text-2xl font-semibold md:text-3xl">A relaxed, modern dental experience</h3>
+                <p className="mt-3 text-primary-foreground/85">No long waits. No pressure. Just an honest plan tailored to your smile and your schedule.</p>
+                <ul className="mt-6 space-y-3 text-sm">
+                  {["Free first consultation", "Transparent, fixed-fee treatment plans", "Same-day emergency slots", "International patient concierge"].map((i) => (
+                    <li key={i} className="flex items-center gap-3"><Sparkles className="h-4 w-4 text-white" />{i}</li>
+                  ))}
+                </ul>
+              </div>
+              <div className="rounded-3xl border border-border bg-card p-6 shadow-soft">
+                <div className="flex items-center gap-3 text-sm">
+                  <Clock className="h-5 w-5 text-teal" />
+                  <span><span className="font-semibold">Mon–Fri</span> 08:00–20:00 · <span className="font-semibold">Sat</span> 09:00–17:00</span>
+                </div>
+              </div>
+            </div>
+            <Card className="p-6 md:p-8 bg-card border-border/60 shadow-soft">
+              <AppointmentForm />
+            </Card>
+          </div>
+        </Section>
+      </section>
 
       {/* FINAL CTA */}
       <section className="container-px mx-auto max-w-7xl pb-20">
